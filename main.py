@@ -11,7 +11,8 @@ from pydantic import BaseModel
 
 #connect with server
 #client = MongoClient('localhost', 27017) #how to connect to database created via docker??????
-client = MongoClient("mongodb+srv://admin:admin@todo-list.he9f8.mongodb.net/test")
+client = MongoClient("mongodb+srv://admin:admin@todo-list.he9f8.mongodb.net", 27017)
+#client = MongoClient("todo-list.he9f8.mongodb.net:27017")
 db = client.todolist
 
 #api
