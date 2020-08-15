@@ -10,7 +10,8 @@ from bson.objectid import ObjectId
 from pydantic import BaseModel
 
 #connect with server
-client = MongoClient('localhost', 27017) #how to connect to database created via docker??????
+#client = MongoClient('localhost', 27017) #how to connect to database created via docker??????
+client = MongoClient("mongodb+srv://admin:admin@todo-list.he9f8.mongodb.net/test?authSource=admin&replicaSet=atlas-120unt-shard-0&readPreference=primary&appname=MongoDB%20Compass%20Community&ssl=true")
 db = client.todolist
 
 #api
